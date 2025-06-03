@@ -1,5 +1,5 @@
 import { HttpStatus } from '@nestjs/common'
-import { ProblemDetailsException } from 'src/common/exception/problems-details.exception'
+import { ProblemDetailsException } from '../../common/exception/problems-details.exception'
 
 export class UserAlreadyExistsException extends ProblemDetailsException {
   constructor(email: string) {
